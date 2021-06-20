@@ -20,7 +20,7 @@ jobs:
     - name: 🔨 Build Project
       run: |
         yarn
-        sapper export
+        yarn export
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
