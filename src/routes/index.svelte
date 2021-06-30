@@ -1,9 +1,2 @@
-<script>
-  import Card from '../components/card.svelte';
-</script>
-
-<svelte:head>
-  <title>zbllrsn</title>
-</svelte:head>
-
-<Card />
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
