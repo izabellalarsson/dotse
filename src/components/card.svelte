@@ -15,13 +15,6 @@
   </div>
 
   <h2 class="text-primary text-xl ml-20">
-    Hello! <br />
-    So this is really awkward to write a whole text about me, but yeah here we go.
-    <br />
-    I'M A DEVELOPER (oops caps lock...). I am a developer living and working in Gothenburg,
-    Sweden. Enjoying new challenges and love to learn new stuff.
-    <br />
-    And this site is kind of my attempt to do something instead of just thinking
-    about doing something :)
+    Hello!
   </h2>
 </div>
