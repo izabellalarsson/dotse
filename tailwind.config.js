@@ -17,7 +17,7 @@ export default {
 			}
 		}
 	},
-	purge: ['./index.html', './src/**/*.{svelte,js}'], // for unused CSS
+	content: ['./index.html', './src/**/*.{svelte,js}'], // for unused CSS
 	variants: {
 		extend: {}
 	},

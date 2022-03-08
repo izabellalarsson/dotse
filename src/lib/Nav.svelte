@@ -5,8 +5,8 @@
             <h2 class="text-xl text-pink">Hello 👋</h2>
         </a>
         <nav class="flex flex-wrap items-center justify-end text-pink">
-            <a class="mr-5" name="navigation">Home</a>
-            <a class="mr-5" name="navigation">Blog</a>
+            <a class="mr-5" href="#">Home</a>
+            <a class="mr-5" href="#">Blog</a>
         </nav>
     </div>
 </header>
