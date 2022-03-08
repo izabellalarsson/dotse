@@ -1,9 +1,13 @@
 <script>
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+  import Meny from './components/meny.svelte'
+  import TailwindCss from './TailwindCSS.svelte';
 </script>
+<TailwindCss />
 
 <main>
+  <Meny />
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 
