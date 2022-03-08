@@ -1,32 +1,31 @@
-name: Deploy site 
+name: Deploy site
 
 on:
   push:
-    branches: [ main ]  
+    branches: [main]
 
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
-    - name: Use Node.js 12
-      uses: actions/setup-node@v2-beta
-      with:
-        node-version: '12'
-      
-    - name: 🔨 Build Project
-      run: |
-        yarn
-        yarn export
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        local-dir: __sapper__/export/
-        server: ${{ secrets.ftp_server }}
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '16'
+
+      - name: 🔨 Build Project
+        run: |
+          yarn
+          yarn export
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          local-dir: dist/
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
