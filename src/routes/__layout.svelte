@@ -3,6 +3,10 @@
 	import '../app.css';
 </script>
 
+<head>
+	<title>Izabella - Developer</title>
+</head>
+
 <Header />
 <main class="max-w max-h-full mx-auto">
 	<slot />
